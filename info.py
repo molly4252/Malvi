@@ -20,7 +20,7 @@ API_HASH = environ.get('API_HASH', '0ab2955ad5b1a913e220800b5fc5db36')
 BOT_TOKEN = environ.get('BOT_TOKEN', "7445483081:AAG_h34ej2OkE7ajDlWGL0J_DdzQPaxVnOA")
 
 # Bot settings
-CACHE_TIME = int(environ.get('CACHE_TIME', 1200))
+CACHE_TIME = int(environ.get('CACHE_TIME', 500))
 PICS = (environ.get('PICS', 'https://envs.sh/VVW.jpg')).split() #SAMPLE PIC
 NOR_IMG = environ.get("NOR_IMG", "https://envs.sh/VVW.jpg")
 MELCOW_VID = environ.get("MELCOW_VID", "https://t.me/How_To_Open_Linkl")
@@ -132,7 +132,7 @@ STREAM_MODE = bool(environ.get('STREAM_MODE', True)) # Set True or False
 
 # If Stream Mode Is True Then Fill All Required Variable, If False Then Don't Fill.
 MULTI_CLIENT = False
-SLEEP_THRESHOLD = int(environ.get('SLEEP_THRESHOLD', '20'))
+SLEEP_THRESHOLD = int(environ.get('SLEEP_THRESHOLD', '10'))
 PING_INTERVAL = int(environ.get("PING_INTERVAL", "20"))  # 20 seconds
 if 'DYNO' in environ:
     ON_HEROKU = True
